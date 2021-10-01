@@ -2,15 +2,10 @@
 #include <map>
 bool isEqual(std::map<char, int> firstW, std::map<char, int> secondW)
 {
-    if (firstW.size() != secondW.size()) {
-        return false;
-    }
-    else {
         if (firstW == secondW)
             return true;
         else
-            return false;
-    }
+            return false; 
 }
 
 void isAnagram(std::string first, std::string second)
