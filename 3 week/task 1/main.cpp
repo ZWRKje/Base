@@ -2,12 +2,6 @@
 #include <algorithm>
 #include <vector>
 
-bool compare(const int& x, const int& y){
-    if(std::abs(x) < std::abs(y)){
-        return true;
-    }
-    return false;
-}
 
 void printVec(const std::vector<int>& vec){
     for(const auto& i : vec){
@@ -27,7 +21,11 @@ int main (){
         --n;
     }
 
-    std::sort(begin(vec1), end(vec1), compare);
+    std::sort(begin(vec1), end(vec1), 
+         [](const int& x, const int& y){
+            return abs(x) < abs(y);
+          } 
+    );
 
     printVec(vec1);
     return 0;
