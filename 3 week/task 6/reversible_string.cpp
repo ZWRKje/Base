@@ -18,18 +18,18 @@ private:
     std::string str;
 };
 
-// int main() {
-//     ReversibleString s("live");
-//     s.Reverse();
-//     std::cout << s.ToString() << std::endl;
+int main() {
+    ReversibleString s("live");
+    s.Reverse();
+    std::cout << s.ToString() << std::endl;
 
-//     s.Reverse();
-//     const ReversibleString& s_ref = s;
-//     std::string tmp = s_ref.ToString();
-//     std::cout << tmp << std::endl;
+    s.Reverse();
+    const ReversibleString& s_ref = s;
+    std::string tmp = s_ref.ToString();
+    std::cout << tmp << std::endl;
 
-//     ReversibleString empty;
-//     std::cout << '"' << empty.ToString() << '"' << std::endl;
+    ReversibleString empty;
+    std::cout << '"' << empty.ToString() << '"' << std::endl;
 
-//     return 0;
-// }
+    return 0;
+}
