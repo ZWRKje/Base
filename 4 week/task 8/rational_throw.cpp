@@ -50,7 +50,7 @@ private:
     int den;
 };
 
-// Вставьте сюда реализацию operator / для класса Rational
+
 Rational operator/(const Rational& first, const Rational& second) {
     
     int num = 0;
